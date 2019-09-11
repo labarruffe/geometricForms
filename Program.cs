@@ -14,7 +14,7 @@ namespace geometricForms
             Ask("What's the side unit ?");
             string unit = Answer();
             Square square = new Square(side, color, unit);
-            Console.WriteLine(square.ToString());
+            Console.WriteLine(square);
 
             Console.WriteLine("\nCreating Circle...");
              Ask("What's the radius value?");
@@ -24,7 +24,7 @@ namespace geometricForms
             Ask("What's the side unit ?");
             string unit1 = Answer();
             Circle circle = new Circle(radius, color1, unit1);
-            Console.WriteLine(circle.ToString());
+            Console.WriteLine(circle);
 
             Console.WriteLine("\nCreating Triangle...");
             Ask("What's the A side value?");
@@ -38,7 +38,7 @@ namespace geometricForms
             Ask("What's the unit of the sides ?");
             string unit3 = Answer();
             Triangle triangle = new Triangle(sideA, sideB, sideC, color3, unit3);
-            Console.WriteLine(triangle.ToString());
+            Console.WriteLine(triangle);
         }
 
         public static void Ask(string message)
